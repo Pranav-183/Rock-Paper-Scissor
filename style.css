@@ -1,0 +1,50 @@
+body {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   flex-direction: column;
+   width: 100%;
+   margin: 0;
+}
+
+.options {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.option {
+   font-size: 80px;
+   cursor: pointer;
+   transition: .2s ease-in-out;
+   margin: 10px;
+}
+
+.option:hover {
+   opacity: 0.7;
+}
+
+.players {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8rem;
+   font-size: 1.5rem;
+   margin-top: 20px;
+}
+
+.game {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 8rem;
+}
+
+.game > * {
+   font-size: 80px;
+   cursor: default;
+}
+
+.you.lose, .computer.lose, .you.tie, .computer.tie { 
+   opacity: 0.5;
+}
